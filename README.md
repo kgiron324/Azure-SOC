@@ -72,7 +72,7 @@ Stop Time:	2023-07-20 02:08:20
 | SecurityIncident         | 0
 | AzureNetworkAnalytics_CL | 0
 
-<b>Percentage Decrease After Securing/Hardening Envionment</b><br>
+<b>Decrease in Malicious Activity (%) After Securing Environment</b><br>
 SecurityEvent: -71.5%<br>
 Syslog: -98.38%<br>
 SecurityAlert: -100%<br>
