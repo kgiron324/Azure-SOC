@@ -3,7 +3,7 @@
 
 ## Introduction
 
-In this endeavor, I constructed a small-scale honeynet within the Azure cloud platform. The honeynet was designed to gather log data from multiple sources and store it in a Log Analytics workspace. Microsoft Sentinel was utilized to analyze the data, generating attack maps, activating alerts, and creating incident reports. The project involved assessing security metrics in an unsecured environment over a 24-hour period. Subsequently, security controls were implemented to fortify the environment, after which the security metrics were measured again for another 24 hours. The following section presents the obtained results for the metrics we focused on.
+In this project, I constructed a small-scale honeynet within the Azure cloud platform. The honeynet was designed to gather log data from multiple sources and store it in a Log Analytics workspace. Microsoft Sentinel was utilized to analyze the data, generating attack maps, activating alerts, and creating incident reports. The project involved assessing security metrics in an unsecured environment over a 24-hour period. Subsequently, security controls were implemented to fortify the environment, after which the security metrics were measured again for another 24 hours. The following section presents the obtained results for the metrics we focused on.
 
 - SecurityEvent (Windows Event Logs)
 - Syslog (Linux Event Logs)
@@ -27,9 +27,9 @@ The architecture of the mini honeynet in Azure consists of the following compone
 - Azure Storage Account
 - Microsoft Sentinel
 
-For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
+Regarding the "BEFORE" metrics, all resources were initially deployed and made accessible to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls configured with unrestricted access, while other resources were deployed with public endpoints visible on the Internet. Consequently, there was no utilization of Private Endpoints during this phase.
 
-For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
+Regarding the "AFTER" metrics, significant security enhancements were implemented. Network Security Groups were strengthened by blocking ALL traffic, except for my admin workstation, which was allowed to access the resources. Additionally, all other resources benefited from increased protection through their built-in firewalls and the use of Private Endpoints.
 
 ## Attack Maps Before Hardening / Security Controls
 <b>Windows RDP/SMB Auth Failures</b>
