@@ -14,6 +14,8 @@ In this project, I constructed a small-scale honeynet within the Azure cloud pla
 ## Architecture Before Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
 
+In this architecture, all resources were initially deployed and made accessible to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls configured with unrestricted access, while other resources were deployed with public endpoints visible on the Internet. Consequently, there was no utilization of Private Endpoints during this phase.
+
 ## Architecture After Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
 
@@ -27,9 +29,7 @@ The architecture of the small honeynet in Azure consists of the following compon
 - Azure Storage Account
 - Microsoft Sentinel
 
-Regarding the "BEFORE" metrics, all resources were initially deployed and made accessible to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls configured with unrestricted access, while other resources were deployed with public endpoints visible on the Internet. Consequently, there was no utilization of Private Endpoints during this phase.
-
-Regarding the "AFTER" metrics, significant security enhancements were implemented. Network Security Groups were strengthened by blocking ALL traffic, except for my admin workstation, which was allowed to access the resources. Additionally, all other resources benefited from increased protection through their built-in firewalls and the use of Private Endpoints.
+In this architecture, significant security enhancements were implemented. Network Security Groups were strengthened by blocking ALL traffic, except for my admin workstation, which was allowed to access the resources. Additionally, all other resources benefited from increased protection through their built-in firewalls and the use of Private Endpoints.
 
 ## Attack Maps Before Hardening / Security Controls
 <b>Windows RDP/SMB Auth Failures</b>
