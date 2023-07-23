@@ -42,8 +42,8 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:<br>
-Start Time 2023-07-17 02:11:43<br>
-Stop Time 2023-07-18 02:11:43
+Start Time: 2023-07-17 02:11:43<br>
+Stop Time: 2023-07-18 02:11:43
 
 | Metric                   | Count
 | ------------------------ | -----
@@ -60,8 +60,8 @@ All map queries actually returned no results due to no instances of malicious ac
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:<br>
-Start Time 2023-07-19 02:08:20<br>
-Stop Time	2023-07-20 02:08:20
+Start Time: 2023-07-19 02:08:20<br>
+Stop Time:	2023-07-20 02:08:20
 
 | Metric                   | Count
 | ------------------------ | -----
@@ -74,6 +74,9 @@ Stop Time	2023-07-20 02:08:20
 <b>Percentage Decrease After Securing/Hardening Envionment</b><br>
 SecurityEvent: -71.5%<br>
 Syslog: -98.38%<br>
+SecurityAlert: -100%<br>
+SecurityIncident: -100%<br>
+NSG Inbound Malicious Flows Allowed: -100%
 
 ## Conclusion
 
