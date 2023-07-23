@@ -71,7 +71,7 @@ Stop Time	2023-07-20 02:08:20
 | SecurityIncident         | 0
 | AzureNetworkAnalytics_CL | 0
 
-<b>Percentage Change After Security Envionment</b>
+<b>Percentage Change After Security Envionment</b><br>
 Security Events: -71.5%
 
 ## Conclusion
